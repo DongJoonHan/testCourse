@@ -7,6 +7,21 @@ import org.junit.Test;
 public class CalcDiscountConditionTest {
 
 	@Test
+	public void testVIPConditionTrueFalse() {
+		CalcDiscountCondition calcVIP = new CalcDiscountCondition();
+		int result = calcVIP.clacDiscountRate("VIP", 3);
+		assertEquals(0, result);
+	}	
+	
+	@Test
+	public void testVIPConditionFalseTrue() {
+		CalcDiscountCondition calcVIP = new CalcDiscountCondition();
+		int result = calcVIP.clacDiscountRate("VVIP", 6);
+		assertEquals(0, result);
+	}
+	
+	
+/*	@Test
 	public void testVIPCondition1True() { //TT
 		CalcDiscountCondition calcVIP = new CalcDiscountCondition();
 		int result = calcVIP.clacDiscountRate("VIP", 8);
@@ -32,7 +47,6 @@ public class CalcDiscountConditionTest {
 		CalcDiscountCondition calcVIP = new CalcDiscountCondition();
 		int result = calcVIP.clacDiscountRate("VVIP", 0);
 		assertEquals(0, result);
-	}
-
+	}*/
 
 }

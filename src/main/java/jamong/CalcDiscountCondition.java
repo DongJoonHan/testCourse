@@ -24,22 +24,25 @@ public class CalcDiscountCondition {
 			}
 		}
 		*/
-		this.result(membership, payMonths);
-		/*System.out.println("in if: " + (membership.equals("VIP") == true) + (payMonths >= 6));
+
+		
+		
+		/*
+		System.out.println("in if: " + (membership.equals("VIP") == true) + (payMonths >= 6));
 		System.out.println("out if: " + membership + payMonths);
-	*/
+		 */
 			
-/*		if(membership == "VIP" && payMonths >= 12)
+/*		if(membership.equals("VIP") == true && payMonths >= 12)
 		discountRate = 20;
 	
-		if(membership == "VIP" && payMonths >= 18)
+		if(membership.equals("VIP") == true && payMonths >= 18)
 		discountRate = 25;*/
 
 		return discountRate;
 	}
 	
-	public void result(String membership, int payMonths) {
+/*	public void result(String membership, int payMonths) {
 		System.out.println("in if: " + (membership.equals("VIP") == true) + (payMonths >= 6));
 		//System.out.println("out if: " + membership + payMonths);
-	}
+	}*/
 }
