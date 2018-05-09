@@ -8,13 +8,13 @@ public class CalcDiscount {
 	
 		int discountRate = 0;
 
-		if(membership.equals("VIP") == true && payMonths >= 6) 
+		if(membership.equals("VIP") && payMonths >= 6) 
 		discountRate = 16;
 	
-		if(membership.equals("VIP") == true && payMonths >= 12)
+		if(membership.equals("VIP") && payMonths >= 12)
 		discountRate = 20;
 	
-		if(membership.equals("VIP") == true && payMonths >= 18)
+		if(membership.equals("VIP") && payMonths >= 18)
 		discountRate = 25;
 
 		return discountRate;

@@ -1,14 +1,14 @@
 package jamong;
 
-public class CalcDiscountMCDC {
-
+public class CalcDiscountMultipleCondition {
+	
 	// VIP 멤버십의 할인율 계산 
 
 	public int clacDiscountRate(String membership, int payMonths) {
 	
 		int discountRate = 0;
 
-		if(membership.equals("VIP")  && payMonths >= 6) 
+		if(membership.equals("VIP") && payMonths >= 6) 
 		discountRate = 16;
 	
 /*		if(membership.equals("VIP") && payMonths >= 12)
@@ -19,4 +19,5 @@ public class CalcDiscountMCDC {
 
 		return discountRate;
 	}
+
 }
